@@ -1,0 +1,150 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #FFFFFF; /* Light text */
+}
+
+header, section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #1E1E1E; /* Slightly lighter dark */
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #FFFFFF;
+}
+
+p, li {
+    color: #CCCCCC; /* Slightly lighter for contrast */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #2C2C2C; /* Dark input background */
+    color: #FFFFFF;
+    border: 1px solid #444444;
+    border-radius: 4px;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #888888;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #BB86FC; /* Accent color */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9F6BDF;
+}
+
+a {
+    color: #BB86FC;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Animation for the main heading */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#main-heading {
+    font-size: 2.5em;
+    text-align: center;
+    animation: slideIn 1s ease-out;
+}
+
+/* Styles for the changing word */
+#sub-heading {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#changing-word {
+    color: #BB86FC; /* Accent color */
+    display: inline-block;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.project {
+    width: 150px;
+    margin: 15px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project p {
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+
+/* Centralizando a div que envolve o botão */
+.button-container {
+    text-align: center;
+    margin-top: 20px; /* Espaçamento acima do botão */
+}
+
+/* Ajuste do botão de mentoria com a nova cor e bordas menos arredondadas */
+#mentorship-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #BB86FC; /* Cor roxa baseada na imagem */
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px; /* Menos arredondado */
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 auto; /* Centraliza o botão */
+}
+
+/* Efeito ao passar o mouse */
+#mentorship-button:hover {
+    background-color: #9F6BDF; /* Cor roxa mais escura ao passar o mouse */
+    transform: scale(1.05); /* Leve efeito de zoom */
+}
